@@ -1,0 +1,33 @@
+<html>
+  <style>
+    .gif {
+      height: 40rem;
+    }
+    button {
+      background-color: red;
+      padding: 1rem;
+      border: none;
+      border-radius: 1rem;
+    }
+  </style>
+  <body>
+    <img id="gif" class="gif"/>
+    <audio id="myAudio">
+      <source
+        src="https://juego-app-team.s3.ap-south-1.amazonaws.com/tic-tac/TicTac_20_Holiday_Desktop_Spin-Pack_audio.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <button onclick="myFunction()">SHAKE</button>
+  </body>
+  <script type="text/javascript">
+    function myFunction() {
+      setTimeout(() => {
+        document.getElementById("myAudio").play();
+      }, 2000);
+
+      document.getElementById("gif").src =
+        "https://juego-app-team.s3.ap-south-1.amazonaws.com/tic-tac/tictacgif.gif";
+    }
+  </script>
+</html>
